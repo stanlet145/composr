@@ -1,0 +1,140 @@
+.playlist {
+    position: absolute;
+    height: 90%;
+    width: 10%;
+    right: 0px;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    overflow-y: scroll;
+    transition: all 500ms ease-in-out;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.playlist::-webkit-scrollbar {
+    width: 5px;
+    background: #222;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background: #00acee;
+}
+
+.playlist .playlist-header #header-playlist {
+    color: white;
+    padding: 2px;
+    margin-left: 20%
+}
+
+div.playlist.hidden {
+    transform: translate(100%, 0%);
+}
+
+.playlist-toggler-row .playlist-toggler {
+    position: absolute;
+    left: 96.5%;
+}
+
+.player .main>div.plus-control.added .fa-plus {
+    color: #00acee;
+    position: absolute;
+    right: 55%;
+    bottom: 9.5%;
+    cursor: pointer;
+}
+
+.player .main>div.plus-control .fa-plus {
+    color: white;
+    position: absolute;
+    right: 55%;
+    bottom: 9.5%;
+    cursor: pointer;
+}
+
+.playlist .songList {
+    color: white;
+}
+
+.playlist .songList .item {
+    font-family: "Lato";
+}
+
+.player .list {
+    padding: 10px;
+}
+
+.playlist .songList .item {
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+}
+
+.playlist .songList .item .thumbnail {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.playlist .songList .thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.playlist .songList .item .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.playlist .songList .item .details h2 {
+    color: #eee;
+    font-size: 16px;
+}
+
+.playlist .songList>div.item.played .details h2 {
+    color: #00acee;
+    font-size: 16px;
+}
+
+.playlist .songList>div.item.played .details .fa-itunes-note {
+    visibility: initial;
+}
+
+.playlist .songList>div.item .details .fa-itunes-note {
+    visibility: hidden;
+}
+
+.playlist .songList .item .details p {
+    color: #aaa;
+    font-size: 15px;
+}
+
+.playlist .songList::-webkit-scrollbar {
+    width: 5px;
+    background: #222;
+}
+
+.playlist .songList::-webkit-scrollbar-thumb {
+    background: #00acee;
+}
+
+#clear-playlist {
+    color: white;
+    cursor: pointer;
+}
+
+.playlist .playlist-header .dump-control {
+    margin-left: 50%;
+}

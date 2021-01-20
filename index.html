@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Composer Portfolios" />
+    <meta name="author" content="Stanislaw Kibort" />
+    <title>Composr</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/playlist.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+</head>
+
+<body ondrop="drop(event)" ondragover="allowDrop(event)">
+    <nav class="as" id="mainNav">
+        <div class="collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="details-header"><a class="composer-list-pop">Composr</a></li>
+                <li>
+                    <div id="input_container">
+                        <input type="text" id="search" name="search" required minlength="1" maxlength="20" size="10" placeholder="Search..." autocomplete="off">
+                        <i id="input_img" class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li id="composr" class="title">Composr.</li>
+                <li class="playlist-toggler-row"><a class="playlist-toggler">Playlist</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="results">
+        <div class="list-header">
+            <div>
+                <div>
+                    <div>
+                        <p id="header-artists" style="display: inline-block">Artist Name</p>
+                        <p id="header-songs" style="display: inline-block">Songs</p>
+                    </div>
+                    <hr class="list-header-line">
+                </div>
+            </div>
+        </div>
+        <div class="list">
+        </div>
+        <div class="list-header">
+            <div>
+                <div>
+                    <div>
+                        <p id="header-artists" style="display: inline-block">Song</p>
+                    </div>
+                    <hr class="list-header-line">
+                </div>
+            </div>
+        </div>
+        <div class="list-found-songs">
+        </div>
+    </div>
+    <div>
+        <div class="player">
+            <div class="main">
+                <div class="plus-control"> <i id="plus" class="fas fa-plus"></i>
+                </div>
+                <audio></audio>
+                <div class="thumbnail">
+                    <img src="">
+                </div>
+                <div class="seekbar">
+                    <input type="range">
+                </div>
+                <div class="details">
+                    <h2>
+                        Songname
+                    </h2>
+                    <p>
+                        Artistname
+                    </p>
+                </div>
+                <div class="controls">
+                    <div class="prev-control">
+                        <i id="prev-ico" class="fa fa-backward"></i>
+                    </div>
+                    <div class="play-pause-control songPaused">
+                        <i id="play-ico" class="fa fa-play"></i>
+                        <i id="pause-ico" class="fa fa-pause"></i>
+                    </div>
+                    <div class="next-control">
+                        <i id="next-ico" class="fa fa-forward"></i>
+                    </div>
+                </div>
+                <div class="volume-panel">
+                    <div class="speaker-control muted" style="display: inline-block">
+                        <i id="volume-up" class="fas fa-volume-up"></i>
+                        <i id="volume-muted" class="fas fa-volume-mute"></i>
+                    </div>
+                    <div class="volumebar" style="display: inline-block;">
+                        <input type="range">
+                    </div>
+                </div>
+                <div class="repeat-panel repeat">
+                    <i id="repeat-ico" class="fas fa-redo-alt"></i>
+                </div>
+            </div>
+            <div class="player-list">
+                <div class="toggle-list toggled">
+                    <i id="expand-ico" class="fas fa-angle-right"></i>
+                    <i id="collapse-ico" class="fa fa-angle-down"></i>
+                </div>
+                <div class="list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playlist hidden">
+        <div class="playlist-header">
+            <div>
+                <div>
+                    <div>
+                        <p id="header-playlist" style="display: inline-block">Songs</p>
+                        <div class="dump-control" style="display: inline-block" data-toggle="tooltip" data-placement="left" title="Clear Playlist">
+                            <i id="clear-playlist" class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <hr class="list-header-line">
+                </div>
+            </div>
+        </div>
+        <div class="songList">
+        </div>
+    </div>
+    <div class="footer-container" id="footer">
+        <ul class="footer-data">
+            <i class="fas fa-copyright" style="display: inline-block"></i>
+            <p style="display: inline-block; color:#00acee">
+                Composr
+            </p> by Stanislaw Kibort
+        </ul>
+    </div>
+    <script type="text/javascript" src="./js/all.js"></script>
+    <script type="text/javascript" src="./js/playlist.js"></script>
+</body>
+
+</html>
