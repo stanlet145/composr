@@ -385,7 +385,7 @@ li a:hover {
 .results {
     position: relative;
     top: 80px;
-    height: 90%;
+    height: 80%;
     width: 15%;
     -webkit-user-select: none;
     /* Safari */
